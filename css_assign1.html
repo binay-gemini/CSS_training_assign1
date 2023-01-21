@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header class="fix">
+        <nav>
+            <div class="logo">
+                <p class="para">E Registration</p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Gallary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="register">
+            <h2> Student Registration Form</h2>
+            <form id="register" method="post">
+                <label>Full Name:</label>
+                <br>
+                <input type="text" name="fname" id="name" placeholder="Enter Your Full Name" required>
+                <br><br>
+                <label>Phone Number:</label>
+                <br>
+                <input type="tel" name="pnum" id="number" pattern="[0-9]{10}" placeholder="Enter Your Phone Number" required>
+                <br><br>
+                <label>Date of Birth:</label>
+                <br>
+                <input type="date" name="dob" id="bday"required>
+                <br><br>
+                <label>Address:</label>
+                <br>
+                <textarea id="address" name="Taddress" required></textarea>
+                <br><br>
+                <label>Gender:</label>
+                <br> &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">&nbsp;
+                <span  id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">&nbsp;
+                <span  id="female">Female</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="other">&nbsp;
+                <span  id="other">Others</span>
+                <br><br>
+                <label>City:</label>
+                <br>
+                <select id="city" name="city" required>
+                    <option value="">Select a city</option>
+                    <option value="city1">Delhi</option>
+                    <option value="city2">Gurgaon</option>
+                    <option value="city3">Panchkula
+                    </option>
+                </select>
+                <br><br>
+                <label>Hobbies:</label>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="Cricket"> &nbsp;
+                <span id="Cricket">Cricket</span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="Music"> &nbsp;
+                <span id="Music">Music</span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="Traveling"> &nbsp;
+                <span id="Traveling">Traveling</span>
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="submit">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset" name="reset" id="reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
